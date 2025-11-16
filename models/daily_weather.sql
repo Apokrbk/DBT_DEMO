@@ -1,7 +1,7 @@
 with daily_weather as (
 
     select 
-        date(time) as daily_weather,
+        dateadd(year,4,date(time)) as daily_weather,
         weather,
         temp,
         pressure,
